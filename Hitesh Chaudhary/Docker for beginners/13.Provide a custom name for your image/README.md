@@ -33,7 +33,7 @@
 - To set custom name for a docker image
 
     ```sh
-    docker build -t <username>/<image-name>:<tag-name> .
+    docker build -t <username>/<image-name>:<tag-name> <path-to-docker-file>
     ```
 
     - Ex-
@@ -50,8 +50,8 @@
 
     - Ex-
 
-    ```sh
-    docker run satyamseth/mymongo:latest
-    ```
+        ```sh
+        docker run satyamseth/mymongo:latest
+        ```
 
     - Note tag name is optional
