@@ -1,4 +1,4 @@
-- [YouTube Video Link](https://youtu.be/teGWyCpLNLo?si=_CkTAG9U1pVU9_h3)
+- [YouTube Video Link](https://youtu.be/vTmXJsrV6Nc?si=9JHVFx0vCihsbOzT)
 
 - [`node` Docker Image](https://hub.docker.com/_/node)
 
@@ -26,5 +26,3 @@
         ```sh
         docker run -p 8000:8000 satyamseth/nodeapp
         ```
-
-    ![flow](flow.png)
