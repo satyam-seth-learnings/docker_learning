@@ -1,0 +1,41 @@
+services:
+  web:
+    image: "nginx"
+    ports:
+      - "8080:80"
+    networks:
+      - my_network
+    depends_on:
+      - db
+      - rcache
+
+  app:
+    build:
+      .
+      # dockerfile: Dockerfile
+
+    depends_on:
+      - db
+      - web
+      - rcache
+
+  rcache:
+    image: "redis:$TAG"
+    # profiles:
+    #   - rediscache
+
+    networks:
+      - my_network
+
+  db:
+    image: mysql
+    # environment:
+    #   - MYSQL_ROOT_PASSWORD=h1ll0123
+    env_file:
+      - mysqlconfig.env
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
