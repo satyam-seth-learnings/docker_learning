@@ -1,5 +1,7 @@
 # Docker Networking
 
+- [YouTube Video Link](https://youtu.be/2bn5_FJJu8w?si=tqPHdjqBCnpMAG7H)
+
 1. Bridge Network
 
 2. Host Network
